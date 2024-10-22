@@ -1,0 +1,12 @@
+---
+:id: 207197599
+:submitters:
+- :name: Emma Cao
+  :email: yc324@uw.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2023-10-28 06:41:37.010674000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2023-10-27 23:41:37.010674000 Z
+:status: processed
+:score: 115.0

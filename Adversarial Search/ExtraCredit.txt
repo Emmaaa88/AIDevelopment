@@ -1,0 +1,42 @@
+Part1
+A. The parameter representation of alpha and beta is critical in Alpha-Beta pruning, 
+as they respectively represent the best known upper and lower bounds of the current search level.
+
+When traversing possible successor states, it is checked whether the conditions for Alpha-Beta pruning 
+are met. Specifically, if the current best value (alpha) in the Max layer is greater than or equal to beta, 
+further searches will be stopped; similarly, if the current best value (beta) in the Min layer is less than 
+or equal to alpha, further searches will also be stopped. .
+
+Max layer (I_PLAY):
+The code attempts to maximize the evaluated value. Whenever it finds a better estimate, it updates the alpha value.
+When alpha >= beta, the current branch is no longer likely to produce a better result, so further searches are stopped and pruned.
+
+Min layer (OPPONENT_PLAYS):
+The code attempts to minimize the evaluated value. Whenever a smaller estimated value is found, it updates the beta value.
+When beta <= alpha, the current branch is no longer likely to produce a worse result, so further search is stopped and pruned.
+
+
+C. First, I will make a rough judgment and reply to the opponent's speech. When I recognize that the opponent's speech contains good, 
+I will reply thank you, and when I recognize that the opponent's speech contains bad, I will issue a complaining modal particle.
+
+When I judge that the value of evaluation is very high, that is, it exceeds the power of 10 (K + 1), I will judge that I must win at this time, 
+and I will say Absolutely win!. Because the maximum value of each line under normal circumstances is generally 10 to the K-1 power, 
+so reaching the (K + 1) power of 10 must be a win. When I am about to win, that is, when the evaluation exceeds 10 to the Kth power, 
+I will say HHhhhhhhh! I believe I will win! to express the joy of winning at this time.
+When I judge that the evaluation exceeds 10 to the (K - 2) power, it means that my state is approaching a winning state, so I would say 
+This should be a good choice. When I judge that the evaluation only exceeds 10, it means that my state is not very good, so I will feel a little 
+disappointed and say I think I'm a little lost...
+
+When the evaluation is less than zero, it means that the advantage of the situation on the field is more biased towards the opponent. 
+I will be a little nervous, so the remark will be What step did I take wrong?
+
+If the evaluation is less than -10 to the K - 2 power, then I will know that I am completely at a disadvantage. I will marvel at the good move 
+played by my opponent, and I will say Wow...You took a good step...
+When faced with special situations such as lack of time or the evaluation failed to find the best position to play chess, I would panic and 
+say OMG, no way to move :(
+
+
+Part 2
+I wish to enter the competition and I submitted the qualify files as qualify1 and qualify2.
+My opponent agents are gr34KInARow and syamasKInARow. For the qualify2 competing with syamasKInARow, 
+the game stopped because of bug from syamasKInARow.
